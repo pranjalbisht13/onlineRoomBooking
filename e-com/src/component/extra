@@ -1,0 +1,46 @@
+      
+     
+      
+      
+      
+      
+      <div  className="container-fluid  ml-5"  >
+                  <div className ="ml-5 my-5">
+                <h1 style={{mystyle}} > Welcome to Online Room Booking</h1>
+            </div>
+          <Row md={4}>
+        <Col md={8}>
+           {/*< CardImg  width ="150%"  height="200%" src="./components/images/ucm.jpg" alt="ucm" />*/}
+          <Card body color="light" body outline color="danger" className="text-center">
+            <CardTitle><h3>Online Room Booking</h3></CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Container>
+            <Button color="dark">Click Room Registration
+            </Button>
+            </Container>
+          </Card>
+        </Col>    
+      </Row>
+      <Row>
+      <Col sm="4">
+        <Card body className=" text-center ml-5 my-5"  body outline color="danger" >
+          <CardTitle className="text-center"> <h4>Room Booking</h4></CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Container>
+            <Button  color="success">Click Room Reservation
+            </Button>
+            </Container>
+        </Card>
+      </Col>
+      <Col sm="4">
+        <Card body className=" text-center ml-5 my-5"  body outline color="danger" >
+          <CardTitle ><h4>Room Cancelation</h4> </CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Container>
+            <Button color="danger">Click Room Cancelation
+            </Button>
+            </Container>
+        </Card>
+      </Col>
+    </Row>
+      </div>
