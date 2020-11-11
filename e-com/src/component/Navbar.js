@@ -1,12 +1,14 @@
 import React,{Component} from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import ViewBooking from '../component/ViewBooking';
 import {FormControl, Form, Button} from "react-bootstrap";
 
 export default class Navbar extends Component{
 
     
-render(){
+render(){    
+  
     return(
         <NavWrapper className="navbar navbar-expand-lg navbar-light bg-warning ">           
           <ul className="navbar-nav align-items-right">
@@ -64,6 +66,7 @@ render(){
             <form class="form-inline my-2 my-lg-0">
       <input class="form-control align-content-end ml-5 mr-sm-3" type="search" 
                                     placeholder="Search" aria-label="Search"/>
+       
       <button class="btn btn-danger my-2 my-sm-0"type="submit" onClick={(e) => {
                                             e.preventDefault();
                                             window.location.href='http://google.com';

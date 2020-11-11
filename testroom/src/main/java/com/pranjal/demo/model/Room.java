@@ -1,6 +1,7 @@
 package com.pranjal.demo.model;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -21,8 +22,8 @@ public class Room {
 	private String users;
 	
 	
-	@JsonFormat (pattern = "mm-dd-yyyy")
-	private Date sdate;
+	@JsonFormat (pattern = "yyy-MM-dd")
+	private LocalDate sdate;
 	
 	 @JsonFormat(pattern="hh:mm")
 	private Date time;
@@ -35,7 +36,7 @@ public class Room {
 		super();
 	}
 
-	public Room(Long roomid, String users, Date sdate, Date time, Date etime) {
+	public Room(Long roomid, String users, LocalDate sdate,Date time, Date etime) {
 		super();
 		this.roomid = roomid; 
 		this.users = users;
@@ -60,11 +61,11 @@ public class Room {
 		this.users = users;
 	}
 
-	public Date getSdate() {
+	public LocalDate getSdate() {
 		return sdate;
 	}
 
-	public void setSdate(Date sdate) {
+	public void setSdate(LocalDate sdate) {
 		this.sdate = sdate;
 	}
 
